@@ -1,17 +1,42 @@
-# task_forge
+# Flutter Frontend - Project Management Platform
 
-A new Flutter project.
+This folder contains the **Flutter application** for the Project Management & Paid Task Mini-Platform.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Overview
 
-A few resources to get you started if this is your first Flutter project:
+The Flutter app provides a **role-based UI** for the platform:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- **Admin / Owner**: View dashboard statistics (tasks, payments, users, revenue).  
+- **Buyer**: Create projects, assign tasks, track progress, and make payments.  
+- **Developer**: View assigned tasks, update status, submit solutions (ZIP files).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The app connects to the FastAPI backend via REST APIs and ensures **role-based access control** and **payment workflow logic**.
+
+---
+
+## Features
+
+- **Authentication**
+  - Email & password login
+  - Role-based navigation
+- **Project Management (Buyer)**
+  - Create and manage projects
+  - View all tasks under a project
+- **Task Management**
+  - Task title, description, assigned developer
+  - Hourly rate, status (`todo`, `in_progress`, `submitted`, `paid`)
+  - Developer submission of hours & ZIP solution
+- **Payment Workflow (Buyer)**
+  - Locked submissions until payment
+  - Payment confirmation updates task status to `Paid`
+  - Access to download ZIP solution after payment
+- **Admin Dashboard**
+  - View statistics: projects, tasks, completed tasks, payments, revenue, developer hours
+- **UI**
+  - Dark, premium theme
+  - Clean, professional, user-friendly
+  - API-driven state management using `Provider`
+
+---
