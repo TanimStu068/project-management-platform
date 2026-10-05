@@ -69,3 +69,11 @@ A **full-stack project management platform** built with **Flutter**, **FastAPI**
 **Payment Workflow:** Custom implementation (task-locked until payment)
 
 ---
+
+## 📄 License
+
+Copyright © 2026 Tanim Mahmud. All rights reserved.
+
+This repository is publicly available for viewing and portfolio purposes.
+The source code may not be copied, modified, distributed, or reused
+without prior written permission.
